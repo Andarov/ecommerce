@@ -151,6 +151,15 @@ a {
 .cart {
     display: flex;
     margin-right: 46px;
+    color: var(--text-color);
+}
+
+.cart:hover {
+    color: var(--dark);
+}
+
+.cart:active {
+    opacity: 0.6;
 }
 
 .cart__icon {
@@ -160,6 +169,16 @@ a {
 
 .profile {
     display: flex;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    border: 2px solid var(--yellow);
+}
+
+.profile:active {
+    opacity: 0.6;
 }
 
 .profile__img {
