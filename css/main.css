@@ -250,19 +250,19 @@ a {
 }
 
 .hero__images:hover {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-image:  linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
+}
+
+.hero__images:active {
     border: 2px solid var(--yellow);  
     border-radius: 10px;  
 }
 
-.hero__images:active {
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background-image:  linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);;
-}
-
 /* HERO-CONTENT */
 .hero__content {
-    margin-top: -25px;
+    margin-top: -27px;
     width: 445px;
 }
 
@@ -323,73 +323,60 @@ a {
     margin-bottom: 20px;
 }
 
-.hero__product-list {
+.hero__content-bottom {
     display: flex;
     align-items: center;
 }
 
-.hero__input-wrapper {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 157px;
-    padding: 16px;
+.hero__quantity-wrapper {
+    display: flex;
+    align-items: center; 
     background: #F6F8FD;
     border-radius: 10px;
+    padding: 0 16px 0 13px;
+    white-space: nowrap;
     margin-right: 16px;
 }
 
 .hero__quantity-minus {
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 7px;
+    font-size: 28px;
+    font-weight: 700;
     color: var(--yellow);
     border: none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
 }
 
 .hero__quantity-minus:hover {
     color: #FFAB6A;
 }
 
-.hero__quantity-minus::after {
-    font-size: 30px !important;
-    content: "-";
-}
-
-.hero__input {
-    border: none;
-    background-color: transparent;
+.hero__quantity {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: var(--dark);
     margin-left: 45px;
+    margin-right: 45px;
+    padding: 23px 0 17px;
 }
 
 .hero__quantity-plus {
-    display: block;
-    position: absolute;
-    top: 5px;
-    right: 7px;
+    font-size: 25px;
+    font-weight: 700;
     color: var(--yellow);
     border: none;
     background-color: transparent;
     cursor: pointer;
     border: none;
     background-color: transparent;
+    padding: 0;
 }
 
 .hero__quantity-plus:hover {
     color: #FFAB6A;
-}
-
-.hero__quantity-plus::after {
-    font-size: 30px !important;
-    content: "+";
 }
 
 .mini-cart-btn {

@@ -44,18 +44,18 @@
         <div class="hero">
             <!-- HERO-IMG-WRAPPER -->
             <div class="hero__img-wrapper">
-                <img class="hero__main-img" src="img/main-img.jpg" alt="Shoes" width="445" height="445" srcset="img/main-img.jpg 1x, img/main-img.jpg@2x.png 2x">
+                <img class="hero__main-img" id="mainImg" src="img/main-img.jpg" alt="Shoes" width="445" height="445" srcset="img/main-img.jpg 1x, img/main-img.jpg@2x.png 2x">
                 <ul class="hero__img-list">
-                    <li class="hero__images">
+                    <li class="hero__images js-img-one">
                         <img class="hero__image" src="img/main-img.jpg" alt="shoes" width="88" height="88" srcset="img/main-img.jpg 1x, img/main-img@2x.jpg 2x">
                     </li>
-                    <li class="hero__images">
+                    <li class="hero__images js-img-two">
                         <img class="hero__image" src="img/img-two.jpg" alt="shoes" width="88" height="88" srcset="img/img-two.jpg 1x, img/img-two@2x.jpg 2x">
                     </li>
-                    <li class="hero__images">
+                    <li class="hero__images js-img-three">
                         <img class="hero__image" src="img/img-three.jpg" alt="shoes" width="88" height="88" srcset="img/img-three.jpg 1x, img/img-three@2x.jpg 2x">
                     </li>
-                    <li class="hero__images">
+                    <li class="hero__images js-img-four">
                         <img class="hero__image" src="img/img-four.jpg" alt="shoes" width="88" height="88" srcset="img/img-four.jpg 1x, img/img-four@2x.jpg 2x">
                     </li>
                 </ul>
@@ -72,11 +72,11 @@
                 </div>
                 <p class="hero__sale-price">$250.00</p>
                 <!-- PRODUCT-LIST -->
-                <div class="hero__product-list">
-                    <div class="hero__input-wrapper">
-                        <button class="hero__quantity-minus"></button>
-                        <input class="hero__input" type="number" name="quantity" min="1" max="99">
-                        <button class="hero__quantity-plus"></button>
+                <div class="hero__content-bottom">
+                    <div class="hero__quantity-wrapper">
+                        <button class="hero__quantity-minus js-minus">-</button>
+                        <span class="hero__quantity">0</span>
+                         <button class="hero__quantity-plus js-plus">+</button>
                     </div>
                     <button class="mini-cart-btn" type="button">
                         <img class="mini-cart-icon" src="img/mini-cart.svg" alt="mini cart" width="17" height="16">
@@ -85,7 +85,9 @@
                 </div>
             </div>
         </div>
-        
-    </div>
+
+        </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
