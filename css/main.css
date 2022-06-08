@@ -10,7 +10,7 @@
     font-style: normal;
     font-weight: 400;
     src:url("../fonts/kumbh-sans-v11-latin-regular.woff2") format("woff2"),
-         url("../fonts/kumbh-sans-v11-latin-regular.woff") format("woff");
+    url("../fonts/kumbh-sans-v11-latin-regular.woff") format("woff");
     display: swap;
 }
 
@@ -19,8 +19,8 @@
     font-style: normal;
     font-weight: 700;
     src: local(""),
-         url("../fonts/kumbh-sans-v11-latin-700.woff2") format("woff2"),
-         url("../fonts/kumbh-sans-v11-latin-700.woff") format("woff");
+    url("../fonts/kumbh-sans-v11-latin-700.woff2") format("woff2"),
+    url("../fonts/kumbh-sans-v11-latin-700.woff") format("woff");
     display: swap;
 }
 
@@ -77,6 +77,7 @@ a {
 .header{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #E4E9F2;
 }
 
 .header__logo-link {
@@ -109,8 +110,8 @@ a {
 
 .sitenav__item {
     position: relative;
-    padding-top: 41px;
-    padding-bottom: 41px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     flex-shrink: 0;
 }
 
