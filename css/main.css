@@ -148,7 +148,9 @@ a {
     color: var(--dark);
 }
 
+/* CART */
 .cart {
+    position: relative;
     display: flex;
     margin-right: 46px;
     color: var(--text-color);
@@ -161,6 +163,19 @@ a {
 .cart:active {
     opacity: 0.6;
 }
+
+.cart__counter {
+    position: absolute;
+    top: -5px;
+    left: calc(100% - 13px);
+    padding: 1px 6px;
+    background-color: var(--yellow);
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    border-radius: 6.5px;
+} 
 
 .cart__icon {
     width: 22px;
