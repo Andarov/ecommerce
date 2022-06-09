@@ -152,6 +152,7 @@ a {
 .cart {
     position: relative;
     display: flex;
+    margin-left: 25px;
     margin-right: 46px;
     color: var(--text-color);
 }
@@ -182,6 +183,7 @@ a {
     height: 20px;
 }
 
+/* Profile */
 .profile {
     display: flex;
     border: 2px solid transparent;
@@ -197,6 +199,8 @@ a {
 }
 
 .profile__img {
+    border-radius: 50%;
+    overflow: hidden;
     width: 50px;
     height: 50px;
 }
@@ -247,6 +251,7 @@ a {
     width: 88px;
     height: 88px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .hero__images::after {
