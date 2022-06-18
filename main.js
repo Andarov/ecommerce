@@ -1,3 +1,13 @@
+const elHeaderCartLink = document.querySelector('.header__cart-link');
+const elCardModal = document.querySelector('.header__cart-modal');
+
+elHeaderCartLink.addEventListener("click", function (evt) {
+    evt.preventDefault ();
+
+    elCardModal.classList.toggle("header__cart-modal--open");
+})
+
+
 const elMinus = document.querySelector('.js-minus');
 const elPlus = document.querySelector('.js-plus');
 const elCounting = document.querySelector('.hero__quantity');
@@ -17,8 +27,7 @@ elMinus.addEventListener('click', function(){
 
 elsChangingImg.forEach(function (item) {
     item.addEventListener("click", function () {
-        document.querySelector(".hero__main-img").src = item.children[0].src
+        document.querySelector(".hero__main-img").src = item.children[0].src;
+        document.querySelector(".hero__main-img").srcset = item.children[0].srcset;
     })
 })
-
-console.log(document.querySelector(".hero__main-img").src)

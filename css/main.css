@@ -187,6 +187,10 @@ a {
 /* CART-MODAL */
 .header__cart-modal {
     display: none;
+}
+
+.header__cart-modal--open {
+    display: block;
     position: absolute;
     top: 94px;
     right: -76px;
@@ -220,16 +224,107 @@ a {
 }
 
 .shopping-cart__inner {
-    padding: 24px;
-    flex-grow: 1;
+    padding: 24px 24px 32px;
+}
+
+/* Empty */
+.shopping-cart__empty {
+    display: none;
+    font-weight: 700;
+}
+
+.shopping-cart__empty--block {
     display: flex;
     justify-content: center;
+    align-items: center;    
+}
+
+/* Has Item */
+.shopping-cart__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.shopping-cart__product {
+    display: flex;
     align-items: center;
 }
 
-.shopping-cart__empty {
-    font-weight: 700;
+.shopping-cart__product:not(:last-child) {
+    margin-bottom: 16px;
 }
+
+.shopping-cart__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.shopping-cart__content {
+    overflow: hidden;
+    width: 100%;
+    margin-right: 18px;
+}
+
+.shopping-cart__name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cost {
+    margin-left: 10px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.shopping-cart__bin {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.shopping-cart__icon {
+    color: #C3CAD9;
+    transition: color 0.4s ease;
+}
+
+.shopping-cart__icon:hover {
+    color: var(--dark);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    background-color: var(--yellow);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.4s ease background-color;
+}
+
+.btn--wide {
+    min-width: 272px;
+    box-shadow: 0px 20px 50px -20px #FF7E1B;
+}
+
+.btn:hover {
+    background-color: #FFAB6A;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
 
 /* Profile */
 .profile {
