@@ -351,8 +351,10 @@ a {
 /* HERO */
 .hero {
     display: flex;
-    justify-content: center;
     align-items: center;
+    max-width: 1015px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 90px 0;
 }
 
@@ -412,13 +414,14 @@ a {
 
 .hero__images:active::after {
     border: 2px solid var(--yellow); 
-    background-image:  linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75)), url(Image.png);
+    background-image:  linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
 }
 
 /* HERO-CONTENT */
 .hero__content {
-    margin-top: -27px;
-    width: 445px;
+    margin-top: -11px;
+    width: 100%;
+    max-width: 445px;
 }
 
 .hero__company {
@@ -428,6 +431,7 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--yellow);
+    margin-top: 0;
     margin-bottom: 27px;
 }
 
