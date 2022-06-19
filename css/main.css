@@ -388,6 +388,26 @@ a {
     margin: 0;
     list-style: none;
     overflow: auto;
+    padding-bottom: 15px;
+}
+
+.hero__img-list {
+    scrollbar-color: var(--yellow) var(--text-color);
+}
+
+.hero__img-list::-webkit-scrollbar {
+    width: 15px; 
+    height: 15px;
+}
+
+.hero__img-list::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 8px;
+}
+
+.hero__img-list::-webkit-scrollbar-track { 
+    background: var(--text-color);
+    border-radius: 8px;
 }
 
 .hero__images {
