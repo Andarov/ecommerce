@@ -7,6 +7,19 @@ elHeaderCartLink.addEventListener("click", function (evt) {
     elCardModal.classList.toggle("header__cart-modal--open");
 })
 
+const elShoppingCartBin = document.querySelector('.shopping-cart__bin');
+const elShoppingCartEmpty = document.querySelector('.shopping-cart__empty');
+const elShoppingCartList = document.querySelector('.shopping-cart__list');
+const elCartCounter = document.querySelector('.cart__counter');
+
+elShoppingCartBin.addEventListener("click", function (evt) {
+    evt.preventDefault ();
+
+    elShoppingCartList.classList.add("shopping-cart__list--none");
+    elShoppingCartEmpty.classList.add("shopping-cart__empty--block");
+    elCartCounter.classList.add("cart__counter--none");
+})
+
 
 const elMinus = document.querySelector('.js-minus');
 const elPlus = document.querySelector('.js-plus');

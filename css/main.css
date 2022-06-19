@@ -179,6 +179,10 @@ a {
     border-radius: 6.5px;
 } 
 
+.cart__counter--none {
+    display: none;
+}
+
 .cart__icon {
     width: 22px;
     height: 20px;
@@ -224,6 +228,7 @@ a {
 }
 
 .shopping-cart__inner {
+    flex-grow: 1;
     padding: 24px 24px 32px;
 }
 
@@ -241,10 +246,14 @@ a {
 
 /* Has Item */
 .shopping-cart__list {
+    display: block;
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-bottom: 24px;
+}
+
+.shopping-cart__list--none {
+    display: none;
 }
 
 .shopping-cart__product {
