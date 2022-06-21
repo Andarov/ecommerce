@@ -380,6 +380,7 @@ a {
     height: 445px;
     margin-bottom: 32px;
     border-radius: 15px;
+    object-fit: contain;
 }
 
 .hero__img-list {
@@ -424,6 +425,7 @@ a {
     width: 88px;
     height: 88px;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .hero__images::after {

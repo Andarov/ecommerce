@@ -45,7 +45,6 @@ const elsChangingImg = document.querySelectorAll(".js-img");
 elsChangingImg.forEach(function (item) {
     item.addEventListener("click", function () {
         document.querySelector(".hero__main-img").src = item.children[0].src;
-        document.querySelector(".hero__main-img").srcset = item.children[0].srcset;
     })
 })
 
@@ -55,7 +54,7 @@ elsChangingImg.forEach(function (item) {
         elsChangingImg.forEach(function (elChangingImg) {
             elChangingImg.classList.remove("hero__images--active")
         })
-        
+
         // Faollik qo'shish
         item.classList.add("hero__images--active")
     })
