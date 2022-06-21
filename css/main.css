@@ -446,6 +446,11 @@ a {
     background-image:  linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
 }
 
+.hero__images--active::after {
+    border: 2px solid var(--yellow); 
+    background-image:  linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
+}
+
 /* HERO-CONTENT */
 .hero__content {
     margin-top: -11px;
