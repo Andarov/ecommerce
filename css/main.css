@@ -457,7 +457,7 @@ a {
 
 /* HERO-CONTENT */
 .hero__content {
-    margin-top: -11px;
+    margin-top: -32px;
     width: 100%;
     max-width: 445px;
 }
@@ -555,8 +555,7 @@ a {
     line-height: 20px;
     text-align: center;
     color: var(--dark);
-    margin-left: 45px;
-    margin-right: 45px;
+    min-width: 100px;
     padding: 23px 0 17px;
 }
 
