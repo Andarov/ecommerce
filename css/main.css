@@ -381,6 +381,7 @@ a {
     margin-bottom: 32px;
     border-radius: 15px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .hero__img-list {
@@ -412,8 +413,9 @@ a {
 }
 
 .hero__images {
-    flex-shrink: 0;
     position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
 .hero__images:not(:last-child) {
