@@ -374,7 +374,46 @@ a {
     margin-right: 125px;
 }
 
+/* Hero__controller */
+.hero__main-img-wrapper {
+    position: relative;
+}
+
+.hero__img-controller {
+    position: absolute;
+    top: 50%;
+    z-index: 555;
+    transform: translateY(-50%);
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.hero__img-controller:hover {
+    color: var(--dark);
+}
+
+.hero__img-controller:active {
+    opacity: 0.6;
+}
+
+.hero__img-controller--prev {
+    left: -56px;
+}
+
+.hero__img-controller--next {
+    right: -36px;
+}
+
+.hero__controll-icon {
+    width: 20px;
+    height: 30px;
+}
+
 .hero__main-img {
+    position: relative;
     display: block;
     width: 445px;
     height: 445px;
