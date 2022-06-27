@@ -59,3 +59,57 @@ elsChangingImg.forEach(function (item) {
         item.classList.add("hero__images--active")
     })
 })
+
+// Buttonlar ezilganda rasmlar o'zgarishi
+const elControllerPrev = document.querySelector(".js-controller-prev")
+const elControllerNext = document.querySelector(".js-controller-next")
+
+// Next bosilganda rasm o'zgarishi
+if (elControllerNext) {
+    elControllerNext.addEventListener("click", function () {
+        const elActiveItem = document.querySelector(".hero__images--active");
+        elActiveItem.classList.remove("hero__images--active");
+
+
+        let controllerNext;
+
+        const elMainImg = document.querySelector(".hero__img-list");
+
+        if (elActiveItem.nextElementSibling === null) {
+            controllerNext = elMainImg.children[0];
+        } else {
+            controllerNext = elActiveItem.nextElementSibling
+        }
+
+        controllerNext.classList.add("hero__images--active");
+
+        document.querySelector(".hero__main-img").src = controllerNext.children[0].src;
+        
+
+    })
+}
+
+// Prev bosilganda rasm o'zgarishi
+if (elControllerPrev) {
+    elControllerPrev.addEventListener("click", function () {
+        const elActiveItem = document.querySelector(".hero__images--active");
+        elActiveItem.classList.remove("hero__images--active");
+
+
+        let elControllerPrev;
+
+        const elMainImg = document.querySelector(".hero__img-list");
+
+        if (elActiveItem.previousElementSibling === null) {
+            elControllerPrev = elMainImg.children[0];
+        } else {
+            elControllerPrev = elActiveItem.previousElementSibling;
+        }
+
+        elControllerPrev.classList.add("hero__images--active");
+
+        document.querySelector(".hero__main-img").src = elControllerPrev.children[0].src;
+        
+
+    })
+}
