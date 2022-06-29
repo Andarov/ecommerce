@@ -37,8 +37,8 @@ html {
 }
 
 *:focus {
-    outline: 3px dashed var(--text-color);
-    outline-offset: 3px;
+    outline: 3px dotted var(--yellow);
+    outline-offset: 2px;
 }
 
 body {
@@ -496,7 +496,7 @@ a {
 
 /* HERO-CONTENT */
 .hero__content {
-    margin-top: -32px;
+    margin-top: -22px;
     width: 100%;
     max-width: 445px;
 }
@@ -569,53 +569,39 @@ a {
     align-items: center; 
     background: #F6F8FD;
     border-radius: 10px;
-    padding: 0 16px 0 13px;
     white-space: nowrap;
     margin-right: 16px;
 }
 
-.hero__quantity-minus {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--yellow);
+.hero__quantity-controller {
+    display: inline-flex;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    padding: 0;
+    padding: 24px 16px;
+    border-radius: 10px;
 }
 
-.hero__quantity-minus:hover {
-    color: #FFAB6A;
+.hero__quantity-controller:hover {
+    opacity: 0.8;
+}
+
+.hero__quantity-controller:active {
+    opacity: 0.6;
 }
 
 .hero__quantity {
+    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: var(--dark);
-    min-width: 100px;
-    padding: 23px 0 17px;
-}
-
-.hero__quantity-plus {
-    font-size: 25px;
-    font-weight: 700;
-    color: var(--yellow);
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-}
-
-.hero__quantity-plus:hover {
-    color: #FFAB6A;
+    min-width: 70px;
 }
 
 .mini-cart-btn {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
